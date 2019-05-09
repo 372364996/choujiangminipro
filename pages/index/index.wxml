@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="container">
+	<view class="top">
+
+		<i-icon type="financial_fill" size="20" class="height29 home-jinbi red  middle" /><text class="height29 middle">10086金币</text>
+		<i-icon type="enter" size="25" class="middle height29 home-enter" />
+		<text style="float: right;margin-right: 15rpx;color:#636363;" class="middle height29">去签到</text>
+
+	</view>
+
+	<view class="content">
+		<view class="content-item">
+			<image src="../../content/images/gift.jpg" mode="center"></image>
+			<!-- <view class="content-item-image">33333</view> -->
+		</view>
+	</view>
+	<!-- <view class="userinfo">
+		<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+		<block wx:else>
+			<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+			<text class="userinfo-nickname">{{userInfo.nickName}}Home</text>
+		</block>
+	</view>
+	<view class="usermotto">
+		<text class="user-motto">{{motto}}</text>
+	</view> -->
+</view>
+<i-tab-bar current="{{ current }}" color="#d94b35" bindchange="handleChange" fixed="true">
+	<i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
+	<i-tab-bar-item key="group" icon="service" current-icon="service_fill" title="发起抽奖"></i-tab-bar-item>
+	<i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" title="我的"></i-tab-bar-item>
+</i-tab-bar>
