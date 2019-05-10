@@ -9,6 +9,7 @@
 	box-sizing: border-box;
 	background-color: #efefef;
 	font-family: "黑体";
+	margin-bottom: 80rpx;
 }
 
 .red {
