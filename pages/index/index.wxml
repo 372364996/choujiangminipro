@@ -9,29 +9,29 @@
 	</view>
 
 	<view class="content">
-		<view class="content-item">
+		<view class="content-item" bindtap="todetail">
 			<image src="../../content/images/gift.jpg" mode="center"></image>
-			<view class="content-item-text red">国务院 赞助</view>
+			<view class="content-item-text .content-item-text-shangjia red">国务院 赞助</view>
 			<view class="content-item-text">奖品:神秘大礼包</view>
-			<view class="content-item-text">05月10日 22:00 开奖</view>
+			<view class="content-item-text content-item-text-kaijiang">05月10日 22:00 自动开奖</view>
 		</view>
 		<view class="content-item">
 			<image src="../../content/images/gift.jpg" mode="center"></image>
-			<view class="content-item-text red">国务院 赞助</view>
+			<view class="content-item-text .content-item-text-shangjia red">国务院 赞助</view>
 			<view class="content-item-text">奖品:神秘大礼包</view>
-			<view class="content-item-text">05月10日 22:00 开奖</view>
+			<view class="content-item-text content-item-text-kaijiang">05月10日 22:00 自动开奖</view>
 		</view>
 		<view class="content-item">
 			<image src="../../content/images/gift.jpg" mode="center"></image>
-			<view class="content-item-text red">国务院 赞助</view>
+			<view class="content-item-text .content-item-text-shangjia red">国务院 赞助</view>
 			<view class="content-item-text">奖品:神秘大礼包</view>
-			<view class="content-item-text">05月10日 22:00 开奖</view>
+			<view class="content-item-text content-item-text-kaijiang">05月10日 22:00 自动开奖</view>
 		</view>
 		<view class="content-item">
 			<image src="../../content/images/gift.jpg" mode="center"></image>
-			<view class="content-item-text red">国务院 赞助</view>
+			<view class="content-item-text .content-item-text-shangjia red">国务院 赞助</view>
 			<view class="content-item-text">奖品:神秘大礼包</view>
-			<view class="content-item-text">05月10日 22:00 开奖</view>
+			<view class="content-item-text content-item-text-kaijiang">05月10日 22:00 自动开奖</view>
 		</view>
 	</view>
 	<!-- <view class="userinfo">

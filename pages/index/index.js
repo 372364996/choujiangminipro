@@ -20,8 +20,15 @@ Page({
 		detail
 	}) {
 		this.setData({
-			current: detail.key
+			current: detail.key,
+			
 		});
+		if(detail.key=="mine"){
+			
+		wx.navigateTo({
+			url:"/pages/mine/mine"
+		})
+		}
 	},
 	onLoad: function() {
 		if (app.globalData.userInfo) {
@@ -76,5 +83,11 @@ Page({
 			userInfo: e.detail.userInfo,
 			hasUserInfo: true
 		})
+	},
+	todetail:function(e){
+		wx.navigateTo({
+			url:"/pages/detail/detail"
+		})
+		console.log(123);
 	}
 })

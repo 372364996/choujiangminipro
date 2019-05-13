@@ -74,7 +74,7 @@
 
 .content {
 	width: 100%;
-
+margin-bottom: 100rpx;
 }
 
 .content-item {
@@ -86,6 +86,7 @@
 	flex-direction: column;
 	justify-content: space-around;
 	margin: 25rpx auto;
+	padding-bottom:50rpx;
 }
 
 .content-item image {
@@ -96,7 +97,13 @@
 }
 
 .content-item-text {
-	margin-top: 20rpx;
-	margin-left: 20rpx;
-	margin-bottom: 20rpx;
+	margin-top: 15rpx;
+	margin-left: 45rpx;
+}
+.content-item-text-kaijiang{
+	font-size: 30rpx;
+	color:#939393;
+}
+.content-item-text-shangjia{
+	font-size: 35rpx;
 }
