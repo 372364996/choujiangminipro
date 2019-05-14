@@ -1,4 +1,7 @@
 //index.js
+import {
+  tabbar
+} from '../../utils/tpls/tabbar/tabbar-tpl.js';
 //获取应用实例
 const app = getApp()
 
@@ -31,6 +34,8 @@ Page({
 		}
 	},
 	onLoad: function() {
+    wx.hideTabBar();
+    tabbar.apply(this, []);
 		if (app.globalData.userInfo) {
 			this.setData({
 				userInfo: app.globalData.userInfo,

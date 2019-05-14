@@ -1,7 +1,3 @@
 <!--pages/mine/mine.wxml-->
 <text>我的</text>
-<i-tab-bar current="{{ current }}" color="#d94b35" bindchange="handleChange" fixed="true">
-	<i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
-	<i-tab-bar-item key="group" icon="service" current-icon="service_fill" title="发起抽奖"></i-tab-bar-item>
-	<i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" title="我的"></i-tab-bar-item>
-</i-tab-bar>
+  <include src="/utils/tpls/tabbar/tabbar-tpl.wxml" />
