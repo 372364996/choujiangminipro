@@ -1,7 +1,7 @@
 //index.js
 import {
   tabbar
-} from '../../utils/tpls/tabbar/tabbar-tpl.js';
+} from 'tabbar-tpl.js';
 //获取应用实例
 const app = getApp()
 

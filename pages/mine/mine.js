@@ -1,7 +1,7 @@
 // pages/mine/mine.js
 import {
   tabbar
-} from '../../utils/tpls/tabbar/tabbar-tpl.js';
+} from 'tabbar-tpl.js';
 Page({
 
 	/**
