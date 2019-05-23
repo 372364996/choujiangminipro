@@ -63,7 +63,7 @@
 
 .home-enter {
 	float: right;
-	margin-right: 15rpx;	
+	margin-right: 15rpx;
 	color: #c6c6c8;
 }
 
@@ -71,21 +71,39 @@
 	float: left;
 	line-height: 80rpx;
 }
-.content{
+
+.content {
 	width: 100%;
-	height: 1000rpx;
+margin-bottom: 100rpx;
 }
+
 .content-item {
+	width: 90%;
 	border: 5px solid #eaeaea;
-	border-radius: 20px;
+	border-radius: 15px;
 	background-color: white;
- display:flex;                   
- justify-content: center; 
- margin-top: 35rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 25rpx auto;
+	padding-bottom:50rpx;
 }
-.content-item image{
-	
-	border-radius: 20px;
+
+.content-item image {
+
+	border-radius: 10px 10px 0px 0px;
 	height: 320rpx;
 	width: 100%;
+}
+
+.content-item-text {
+	margin-top: 15rpx;
+	margin-left: 45rpx;
+}
+.content-item-text-kaijiang{
+	font-size: 30rpx;
+	color:#939393;
+}
+.content-item-text-shangjia{
+	font-size: 35rpx;
 }

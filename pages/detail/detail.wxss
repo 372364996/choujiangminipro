@@ -1,0 +1,118 @@
+/* pages/detail.wxss */
+.content {
+	width: 100%;
+	margin-bottom: 100rpx;
+}
+
+.content-item {
+	width: 100%;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-bottom: 50rpx;
+}
+
+.content-item image {
+
+	height: 480rpx;
+	width: 100%;
+}
+
+.content-item-text {
+	margin-top: 15rpx;
+	margin-left: 45rpx;
+}
+
+.content-item-text-kaijiang {
+	font-size: 30rpx;
+	color: #939393;
+}
+
+.content-item-text-shangjia {
+	font-size: 35rpx;
+}
+
+/* 复制微信公众号 */
+.wxhao {
+	width: 85%;
+	border: 10rpx solid #e1dedb;
+	margin: 25rpx auto;
+	background-color: white;
+	height: 420rpx;
+	text-align: center;
+	line-height: 140rpx;
+}
+
+.wxhao-content {
+	margin: 0rpx auto;
+	width: 80%;
+	color: #a8a19b;
+	background-color: #f8f7f5;
+}
+
+.wxhao-title {
+	color: #716b58;
+}
+
+.wxhao-copy {
+	margin-top: 25rpx;
+	width: 65%;
+	border-radius: 46rpx;
+	border: 0rpx solid white;
+	background-color: #726249;
+	color: white;
+}
+
+/*抽奖区域*/
+.choujiang {
+	padding: 50rpx 0rpx 50rpx 0rpx;
+	background-color: white;
+	margin-top: 25rpx;
+	width: 100%;
+}
+
+.choujiang-button {
+	margin: 0rpx auto;
+	background-color: #d25245;
+	width: 250rpx;
+	height: 250rpx;
+	border-radius: 125rpx;
+	text-align: center;
+	line-height: 250rpx;
+	color: white;
+}
+
+.choujiang-list {
+	margin: 50rpx auto;
+	height: 50rpx;
+	text-align: center;
+	line-height: 50rpx;
+	color: #939393;
+	font-size: large;
+}
+
+.choujiang-images {
+	text-align: center
+}
+
+.choujiang-images-item {
+	margin-right: 25rpx;
+	width: 100rpx;
+	height: 100rpx;
+}
+
+/*分享按钮*/
+.share {
+	margin: 25rpx auto;
+	text-align: center;
+	font-size: 35rpx;
+	color: #939393;
+	height: 70rpx;
+	width: 40%;
+	line-height: 70rpx;
+	border: 5rpx solid  #939393 ;
+}
+.share-icon{
+	line-height: 70rpx;
+}

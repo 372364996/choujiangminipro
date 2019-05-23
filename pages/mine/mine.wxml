@@ -1,0 +1,3 @@
+<!--pages/mine/mine.wxml-->
+<text>我的</text>
+  <include src="/utils/tpls/tabbar/tabbar-tpl.wxml" />

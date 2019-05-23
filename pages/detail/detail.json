@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+		 "i-icon": "../../dist/icon/index"
+	},
+	 "window": {
+	
+	  "navigationBarTitleText": "抽奖详情"
+	
+	}
+}

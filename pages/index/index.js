@@ -1,4 +1,7 @@
 //index.js
+import {
+  tabbar
+} from 'tabbar-tpl.js';
 //获取应用实例
 const app = getApp()
 
@@ -20,10 +23,19 @@ Page({
 		detail
 	}) {
 		this.setData({
-			current: detail.key
+			current: detail.key,
+			
 		});
+		if(detail.key=="mine"){
+			
+		wx.navigateTo({
+			url:"/pages/mine/mine"
+		})
+		}
 	},
 	onLoad: function() {
+    wx.hideTabBar();
+    tabbar.apply(this, []);
 		if (app.globalData.userInfo) {
 			this.setData({
 				userInfo: app.globalData.userInfo,
@@ -76,5 +88,11 @@ Page({
 			userInfo: e.detail.userInfo,
 			hasUserInfo: true
 		})
+	},
+	todetail:function(e){
+		wx.navigateTo({
+			url:"/pages/detail/detail"
+		})
+		console.log(123);
 	}
 })

@@ -9,9 +9,29 @@
 	</view>
 
 	<view class="content">
+		<view class="content-item" bindtap="todetail">
+			<image src="../../content/images/gift.jpg" mode="center"></image>
+			<view class="content-item-text .content-item-text-shangjia red">国务院 赞助</view>
+			<view class="content-item-text">奖品:神秘大礼包</view>
+			<view class="content-item-text content-item-text-kaijiang">05月10日 22:00 自动开奖</view>
+		</view>
 		<view class="content-item">
 			<image src="../../content/images/gift.jpg" mode="center"></image>
-			<!-- <view class="content-item-image">33333</view> -->
+			<view class="content-item-text .content-item-text-shangjia red">国务院 赞助</view>
+			<view class="content-item-text">奖品:神秘大礼包</view>
+			<view class="content-item-text content-item-text-kaijiang">05月10日 22:00 自动开奖</view>
+		</view>
+		<view class="content-item">
+			<image src="../../content/images/gift.jpg" mode="center"></image>
+			<view class="content-item-text .content-item-text-shangjia red">国务院 赞助</view>
+			<view class="content-item-text">奖品:神秘大礼包</view>
+			<view class="content-item-text content-item-text-kaijiang">05月10日 22:00 自动开奖</view>
+		</view>
+		<view class="content-item">
+			<image src="../../content/images/gift.jpg" mode="center"></image>
+			<view class="content-item-text .content-item-text-shangjia red">国务院 赞助</view>
+			<view class="content-item-text">奖品:神秘大礼包</view>
+			<view class="content-item-text content-item-text-kaijiang">05月10日 22:00 自动开奖</view>
 		</view>
 	</view>
 	<!-- <view class="userinfo">
@@ -25,8 +45,4 @@
 		<text class="user-motto">{{motto}}</text>
 	</view> -->
 </view>
-<i-tab-bar current="{{ current }}" color="#d94b35" bindchange="handleChange" fixed="true">
-	<i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
-	<i-tab-bar-item key="group" icon="service" current-icon="service_fill" title="发起抽奖"></i-tab-bar-item>
-	<i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" title="我的"></i-tab-bar-item>
-</i-tab-bar>
+  <include src="/utils/tpls/tabbar/tabbar-tpl.wxml" />
