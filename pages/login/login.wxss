@@ -1,0 +1,9 @@
+/* pages/login.wxss */
+.loginbtn{
+  top: 500rpx;
+}
+.login{
+	padding:60%;
+	background-color: white;
+	width: 100%;
+}

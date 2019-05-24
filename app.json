@@ -5,7 +5,8 @@
     "pages/mine/mine",
     "pages/luckdraw/luckdraw",
     "pages/detail/detail",
-    "utils/tpls/tabbar/tabbar-tpl"
+    "utils/tpls/tabbar/tabbar-tpl",
+    "pages/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",

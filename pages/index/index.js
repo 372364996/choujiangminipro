@@ -1,6 +1,6 @@
 //index.js
 import {
-  tabbar
+	tabbar
 } from 'tabbar-tpl.js';
 //获取应用实例
 const app = getApp()
@@ -11,7 +11,9 @@ Page({
 		userInfo: {},
 		hasUserInfo: false,
 		canIUse: wx.canIUse('button.open-type.getUserInfo'),
-		current: 'homepage'
+		current: 'homepage',
+		//判断小程序的API，回调，参数，组件等是否在当前版本可用。
+		canIUse: wx.canIUse('button.open-type.getUserInfo')
 	},
 	//事件处理函数
 	bindViewTap: function() {
@@ -24,18 +26,19 @@ Page({
 	}) {
 		this.setData({
 			current: detail.key,
-			
+
 		});
-		if(detail.key=="mine"){
-			
-		wx.navigateTo({
-			url:"/pages/mine/mine"
-		})
+		if (detail.key == "mine") {
+
+			wx.navigateTo({
+				url: "/pages/mine/mine"
+			})
 		}
 	},
 	onLoad: function() {
-    wx.hideTabBar();
-    tabbar.apply(this, []);
+		
+		wx.hideTabBar();
+		tabbar.apply(this, []);
 		if (app.globalData.userInfo) {
 			this.setData({
 				userInfo: app.globalData.userInfo,
@@ -62,7 +65,22 @@ Page({
 				}
 			})
 		}
+		// 查看是否授权
+		
+			bindGetUserInfo: function(e) {
+			console.log(e.detail.userInfo)
+			if (e.detail.userInfo) {
+				//用户按了允许授权按钮
+			wx.navigateTo({
+				url: '../logs/logs'
+			})
+			} else {
+				//用户按了拒绝按钮
+			}
+		},
+		
 	},
+
 	onShow: function(e) {
 		this.setData({
 			msgList: [{
@@ -89,9 +107,9 @@ Page({
 			hasUserInfo: true
 		})
 	},
-	todetail:function(e){
+	todetail: function(e) {
 		wx.navigateTo({
-			url:"/pages/detail/detail"
+			url: "/pages/detail/detail"
 		})
 		console.log(123);
 	}
