@@ -2,6 +2,6 @@
 <view class="container">
 	<view class="login">
 		<i-button class="loginbtn" type="error" shape="circle" size="large" open-type="getUserInfo"
-		 indgetuserinfo="bindGetUserInfo">微信登录</i-button>
+		 bindgetuserinfo="bindGetUserInfo">微信登录</i-button>
 	</view>
 </view>

@@ -13,27 +13,15 @@ Page({
 	 * 生命周期函数--监听页面加载
 	 */
 	onLoad: function(options) {
-		wx.getSetting({
-			success: function(res) {
-				if (res.authSetting['scope.userInfo']) {
-					wx.getUserInfo({
-						success: function(res) {
-							console.log(res.userInfo)
-							//用户已经授权过
-						}
-					})
-				} else {
-					wx.redirectTo({
-						url: '/pages/login/login',
-					})
-				}
-			}
-		})
+	
 	},
 	bindGetUserInfo: function(e) {
 		if (e.detail.userInfo) {
 			//用户按了允许授权按钮
-			console.log(e.detail.userInfo)
+			console.log(333)
+            wx.switchTab({
+                url: '/pages/index/index',
+            })
 		} else {
 			//用户按了拒绝按钮
 		}
