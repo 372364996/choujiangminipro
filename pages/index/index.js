@@ -36,7 +36,7 @@ Page({
 		}
 	},
 	onLoad: function() {
-		
+
 		wx.hideTabBar();
 		tabbar.apply(this, []);
 		if (app.globalData.userInfo) {
@@ -65,22 +65,20 @@ Page({
 				}
 			})
 		}
-		// 查看是否授权
-		
-			bindGetUserInfo: function(e) {
-			console.log(e.detail.userInfo)
-			if (e.detail.userInfo) {
-				//用户按了允许授权按钮
-			wx.navigateTo({
-				url: '../logs/logs'
-			})
-			} else {
-				//用户按了拒绝按钮
-			}
-		},
-		
-	},
 
+
+	},
+	// 查看是否授权
+
+	bindGetUserInfo: function(e) {
+		
+		if (e.detail.userInfo) {
+			//用户按了允许授权按钮
+			console.log(e.detail.userInfo)
+		} else {
+			//用户按了拒绝按钮
+		}
+	},
 	onShow: function(e) {
 		this.setData({
 			msgList: [{

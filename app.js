@@ -5,23 +5,7 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-    wx.getSetting({
-      success: function (res) {
-        if (res.authSetting['scope.userInfo']) {
-          wx.getUserInfo({
-            success: function (res) {
-              console.log(res.userInfo)
-              //用户已经授权过
-            }
-          })
-        } else {
-          wx.redirectTo({
-            url: '/pages/index/index',
-          })
-        }
-      }
-    }) 
-		
+
     // 登录
     wx.login({
       success: res => {
@@ -29,7 +13,7 @@ App({
       }
     })
     // 获取用户信息
-
+		
   },
   globalData: {
     userInfo: null
