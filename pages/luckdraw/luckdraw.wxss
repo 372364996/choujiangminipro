@@ -1,1 +1,12 @@
 /* pages/luckdraw/luckdraw.wxss */
+.content-item {
+	width: 90%;
+	border: 5px solid #eaeaea;
+	border-radius: 15px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 25rpx auto;
+	padding-bottom:50rpx;
+}

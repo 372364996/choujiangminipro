@@ -19,5 +19,6 @@ App({
 		userInfo: null,
 		openId: "",
 		hosts:'https://choujiang.hdlebaobao.cn'
+        // hosts:'http://localhost:58269/' 
 	}
 })

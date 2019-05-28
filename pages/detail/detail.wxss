@@ -82,7 +82,16 @@
 	line-height: 250rpx;
 	color: white;
 }
-
+.choujianged-button{
+	margin: 0rpx auto;
+	background-color: #726249;
+	width: 250rpx;
+	height: 250rpx;
+	border-radius: 125rpx;
+	text-align: center;
+	line-height: 250rpx;
+	color: white;
+}
 .choujiang-list {
 	margin: 50rpx auto;
 	height: 50rpx;

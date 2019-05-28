@@ -1,6 +1,6 @@
 <!--utils/tpls/babbar/tabbar-tpl.wxml-->
 <i-tab-bar current="{{ current }}" color="#d94b35" bindchange="tabbarChange" fixed="true">
 	<i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
-	<i-tab-bar-item key="group" icon="service" current-icon="service_fill" title="已开奖"></i-tab-bar-item>
+	<i-tab-bar-item key="group" icon="service" current-icon="service_fill" title="已参与"></i-tab-bar-item>
 	<i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" title="我的"></i-tab-bar-item>
 </i-tab-bar>

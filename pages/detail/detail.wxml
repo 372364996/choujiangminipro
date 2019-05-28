@@ -11,7 +11,8 @@
             <button class="wxhao-copy" bindtap="copyBtn">点此一键复制</button>
         </view>
         <view class="choujiang">
-            <view class="choujiang-button" bindtap="tochoujiang">参与抽奖</view>
+        <view wx:if="{{!iscan}}" class="choujianged-button">等待开奖</view>
+            <view wx:if="{{iscan}}" class="choujiang-button" bindtap="tochoujiang">参与抽奖</view>
             <view class="choujiang-list">已有19568人参与，查看全部></view>
             <view class="choujiang-images">
                 <image class="choujiang-images-item" mode="aspectFit" src="https://pic.qqtn.com/up/2019-5/2019051308301721735.jpg"></image>
