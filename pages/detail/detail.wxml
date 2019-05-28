@@ -2,16 +2,16 @@
     <view class="content">
         <view class="content-item" bindtap="todetail">
             <image src="../../content/images/gift.jpg" mode="center"></image>
-            <view class="content-item-text">奖品:神秘大礼包</view>
-            <view class="content-item-text content-item-text-kaijiang">05月10日 22:00 自动开奖</view>
+            <view class="content-item-text">奖品:{{name}}</view>
+            <view class="content-item-text content-item-text-kaijiang">{{opentime}} 自动开奖</view>
         </view>
         <view class="wxhao">
             <view class="wxhao-title">微信公众号</view>
-            <view class="wxhao-content">{{wxhao}}</view>
+            <view class="wxhao-content">{{businessname}}</view>
             <button class="wxhao-copy" bindtap="copyBtn">点此一键复制</button>
         </view>
         <view class="choujiang">
-            <view class="choujiang-button">参与抽奖</view>
+            <view class="choujiang-button" bindtap="tochoujiang">参与抽奖</view>
             <view class="choujiang-list">已有19568人参与，查看全部></view>
             <view class="choujiang-images">
                 <image class="choujiang-images-item" mode="aspectFit" src="https://pic.qqtn.com/up/2019-5/2019051308301721735.jpg"></image>

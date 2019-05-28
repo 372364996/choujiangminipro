@@ -7,43 +7,14 @@
 		<text style="float: right;margin-right: 15rpx;color:#636363;" class="middle height29">去签到</text>
 
 	</view>
+	<view wx:for="{{products}}" wx:key="Id" class="content">
+		<view class="content-item" bindtap="todetail" data-id="{{item.Id}}">
+			<image src="../../content/images/gift.jpg" mode="center"></image>
+			<view class="content-item-text .content-item-text-shangjia red">{{item.BusinessName}} 赞助</view>
+			<view class="content-item-text">奖品:{{item.Name}}</view>
+			<view class="content-item-text content-item-text-kaijiang">{{item.OpenTime}} 自动开奖</view>
+		</view>
+	</view>
 
-	<view class="content">
-		<view class="content-item" bindtap="todetail">
-			<image src="../../content/images/gift.jpg" mode="center"></image>
-			<view class="content-item-text .content-item-text-shangjia red">国务院 赞助</view>
-			<view class="content-item-text">奖品:神秘大礼包</view>
-			<view class="content-item-text content-item-text-kaijiang">05月10日 22:00 自动开奖</view>
-		</view>
-		<view class="content-item">
-			<image src="../../content/images/gift.jpg" mode="center"></image>
-			<view class="content-item-text .content-item-text-shangjia red">国务院 赞助</view>
-			<view class="content-item-text">奖品:神秘大礼包</view>
-			<view class="content-item-text content-item-text-kaijiang">05月10日 22:00 自动开奖</view>
-		</view>
-		<view class="content-item">
-			<image src="../../content/images/gift.jpg" mode="center"></image>
-			<view class="content-item-text .content-item-text-shangjia red">国务院 赞助</view>
-			<view class="content-item-text">奖品:神秘大礼包</view>
-			<view class="content-item-text content-item-text-kaijiang">05月10日 22:00 自动开奖</view>
-		</view>
-		<view class="content-item">
-     
-			<image src="../../content/images/gift.jpg" mode="center"></image>
-			<view class="content-item-text .content-item-text-shangjia red">国务院 赞助</view>
-			<view class="content-item-text">奖品:神秘大礼包</view>
-			<view class="content-item-text content-item-text-kaijiang">05月10日 22:00 自动开奖</view>
-		</view>
-	</view>
-	<!-- <view class="userinfo">
-		<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-		<block wx:else>
-			<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-			<text class="userinfo-nickname">{{userInfo.nickName}}Home</text>
-		</block>
-	</view>
-	<view class="usermotto">
-		<text class="user-motto">{{motto}}</text>
-	</view> -->
 </view>
   <include src="/utils/tpls/tabbar/tabbar-tpl.wxml" />
