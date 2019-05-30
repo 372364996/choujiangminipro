@@ -12,6 +12,10 @@
 	margin-bottom: 80rpx;
 }
 
+page {
+	background: #f0f0f0;
+}
+
 .red {
 
 	color: #d94b35;

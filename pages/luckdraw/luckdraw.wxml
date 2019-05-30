@@ -1,9 +1,12 @@
 <!--pages/luckdraw/luckdraw.wxml-->
-<view wx:for="{{orders}}" wx:key="Id" class="content">
-    <view class="content-item" data-id="{{item.Id}}">
-        <view wx:if="{{item.IsWin}}" class="content-item-text">已中奖</view>
-        <view wx:if="{{!item.IsWin}}" class="content-item-text">未中奖</view>
-        <view class="content-item-text">奖品:{{item.Name}}</view>
-        <view class="content-item-text content-item-text-kaijiang">{{item.OpenTime}} 自动开奖</view>
-    </view>
+<view class="weather">
+	<view wx:for="{{orders}}" wx:key="Id" class="content">
+		<view class="content-item" data-id="{{item.Id}}">
+			<view wx:if="{{item.IsWin}}" class="content-item-text">已中奖</view>
+			<view wx:if="{{!item.IsWin}}" class="content-item-text">未中奖</view>
+			<view class="content-item-text">奖品:{{item.Name}}</view>
+			<view class="content-item-text content-item-text-kaijiang">{{item.OpenTime}} 自动开奖</view>
+		</view>
+	</view>
+	
 </view>
