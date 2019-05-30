@@ -1,3 +1,22 @@
 <!--pages/mine/mine.wxml-->
-<text>我的</text>
-  <include src="/utils/tpls/tabbar/tabbar-tpl.wxml" />
+<view class='top'>
+    <image class='headimg' src='http://choujiang.hdlebaobao.cn/upload/{{headimg}}/64.png'></image>
+    <view class='name'>{{name}}</view>
+</view>
+<view class='order'>
+<i-row>
+    <i-col class='orderitem' span="8" i-class="col-class">全部抽奖</i-col>
+    <i-col class='orderitem middle' span="8" i-class="col-class">已中奖</i-col>
+    <i-col class='orderitem' span="8" i-class="col-class">未中奖</i-col>
+</i-row>
+</view>
+<i-cell-group>
+    <i-cell title="余额" is-link></i-cell>
+    <i-cell title="官方商城" is-link url="/pages/index/index"></i-cell>
+</i-cell-group>
+<i-cell-group>
+    <i-cell title="个人主页" is-link></i-cell>
+    <i-cell title="推广合作" is-link url="/pages/index/index"></i-cell>
+</i-cell-group>
+<view class='zhichi'>中关村菜市场提供技术支持</view>
+<include src="/utils/tpls/tabbar/tabbar-tpl.wxml" />

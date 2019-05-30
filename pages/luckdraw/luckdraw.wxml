@@ -1,12 +1,21 @@
 <!--pages/luckdraw/luckdraw.wxml-->
 <view class="weather">
-	<view wx:for="{{orders}}" wx:key="Id" class="content">
-		<view class="content-item" data-id="{{item.Id}}">
+    <view class="end">已结束</view>
+    <view wx:for="{{orders}}" wx:key="Id" class="content">
+        <i-cell class="content-item" title="奖品:{{item.Name}}" value="{{item.OpenTime}}" is-link url="/pages/detail/detail?id={{item.ProductId}}"></i-cell>
+        <!-- <view class="content-item" data-id="{{item.Id}}">
 			<view wx:if="{{item.IsWin}}" class="content-item-text">已中奖</view>
 			<view wx:if="{{!item.IsWin}}" class="content-item-text">未中奖</view>
 			<view class="content-item-text">奖品:{{item.Name}}</view>
 			<view class="content-item-text content-item-text-kaijiang">{{item.OpenTime}} 自动开奖</view>
-		</view>
-	</view>
-	
+		</view> -->
+    </view>
+    <!-- <i-cell-group>
+        <i-cell title="只显示箭头" is-link></i-cell>
+        <i-cell title="跳转到首页" value="马上去" is-link url="/pages/dashboard/index"></i-cell>
+        <i-cell title="只有 footer 点击有效" is-link url="/pages/dashboard/index" only-tap-footer></i-cell>
+        <i-cell title="开关">
+            <switch slot="footer" checked />
+        </i-cell>
+    </i-cell-group> -->
 </view>

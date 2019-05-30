@@ -1,1 +1,39 @@
 /* pages/mine/mine.wxss */
+
+.top {
+    margin: 30rpx 0rpx 10rpx 0rpx;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 25rpx;
+}
+
+.headimg {
+    margin: 25rpx auto;
+    width: 128rpx;
+    height: 128rpx;
+    border-radius: 64rpx;
+}
+
+.name {
+    text-align: center;
+}
+
+.order {
+    background-color: white;
+    height: 200rpx;
+    margin-bottom: 25rpx;
+}
+
+.orderitem {
+    line-height: 200rpx;
+    text-align: center;
+    color: #858585;
+}
+
+.zhichi {
+    font-size: 25rpx;
+    color: #858585;
+    margin-top: 100rpx;
+    text-align: center
+}
