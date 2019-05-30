@@ -9,6 +9,8 @@ Page({
 	data: {
 		motto: 'Hello World',
 		userInfo: {},
+		encryptedData: "",
+		iv: "",
 		hasUserInfo: false,
 		canIUse: wx.canIUse('button.open-type.getUserInfo'),
 		current: 'homepage',
@@ -51,7 +53,9 @@ Page({
 			app.userInfoReadyCallback = res => {
 				this.setData({
 					userInfo: res.userInfo,
-					hasUserInfo: true
+					hasUserInfo: true,
+					iv: res.iv,
+					encryptedData: res.encryptedData
 				})
 			}
 		} else {
@@ -61,7 +65,9 @@ Page({
 					app.globalData.userInfo = res.userInfo
 					this.setData({
 						userInfo: res.userInfo,
-						hasUserInfo: true
+						hasUserInfo: true,
+						iv: res.iv,
+						encryptedData: res.encryptedData
 					})
 				}
 			})
@@ -73,17 +79,20 @@ Page({
 						success: function(userres) {
 							wx.login({
 								success(loginres) {
+									
 									wx.request({
 										url: app.globalData.hosts + '/home/login',
 										data: {
-											code: loginres.code
+											code: loginres.code,
+											encryptedData: userres.encryptedData,
+											iv: userres.iv
 										},
 										success(res) {
 											console.log(res.data);
 											app.globalData.openId = res.data.openid;
 											console.log(app.globalData.openId);
 											wx.request({
-												url:app.globalData.hosts +'/products/list',
+												url: app.globalData.hosts + '/products/list',
 												success(listres) {
 
 													that.setData({
